@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "GalaxyGirl";
+  src: url("../public/fonts/GalaxyGirl-2OO0K.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Insomnia";
+  src: url("../public/fonts/AndroidInsomniaRegular-RLxW.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer base {
+  body {
+    @apply bg-[#120a1e] text-[#fff] font-[insomnia];
+  }
+  li {
+    @apply text-[1.3rem] font-bold;
+  }
+  span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  i {
+    display: inline-block;
+  }
+}
+
+@layer utilities {
+  @keyframes glow-frame {
+    0%,
+    100% {
+      box-shadow:
+        inset 0 0 0 6px rgba(255, 102, 196, 0.6),
+        inset 0 0 5px #6e00ff;
+    }
+    50% {
+      box-shadow:
+        inset 0 0 0 6px rgba(255, 255, 255, 0.5),
+        inset 0 0 10px #ff66c4;
+    }
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 4s ease-in-out infinite;
+  }
+
+  .outer-trapezoid {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 90% 100%, 0 100%);
+    animation: glow-frame 7s ease-in-out infinite;
+    padding: 3px;
+    z-index: 99;
+  }
+
+  .inner-trapezoid {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 90% 100%, 0 100%);
+    background: rgba(30, 30, 47, 0.3);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 102, 196, 0.15);
+    z-index: 100;
+    color: #eeeaff;
+  }
+
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .animate-blink {
+    animation: blink 1s step-start infinite;
+  }
+
+  .star-icon {
+    width: 25px;
+    height: 25px;
+    padding: 3px 1.4px;
+  }
+
+  .separator {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* main page below landing page */
+  .title {
+    font-size: 1.4rem;
+    color: #ff66c4;
+  }
+
+  /* For skill logos */
+  .skill-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1;
+    margin-top: 8px;
+    padding: 0.5rem 0.6rem;
+    border-radius: 2px;
+    background: rgba(30, 30, 47, 0.3);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 102, 196, 0.15);
+    font-size: 1.2rem;
+  }
+}
