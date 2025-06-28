@@ -22,7 +22,7 @@ const messages = [
   "🛰️ ACCESSING USER PROFILE...",
   "> Name: Georgina Akumiah",
   "> Role: Front-End Developer 💻",
-  "> Likes: Building on the web, Purple and plums 💜🍇",
+  "> Likes:Purple and plums 💜🍇",
 ];
 
 const textEl = document.getElementById("typewriter-text");

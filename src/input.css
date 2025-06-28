@@ -2,14 +2,14 @@
 
 @font-face {
   font-family: "GalaxyGirl";
-  src: url("../public/fonts/GalaxyGirl-2OO0K.ttf") format("truetype");
+  src: url("fonts/GalaxyGirl-2OO0K.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Insomnia";
-  src: url("../public/fonts/AndroidInsomniaRegular-RLxW.ttf") format("truetype");
+  src: url("/fonts/AndroidInsomniaRegular-RLxW.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -40,13 +40,13 @@
     }
     50% {
       box-shadow:
-        inset 0 0 0 6px rgba(255, 255, 255, 0.5),
+        inset 0 0 0 2px rgba(255, 255, 255, 0.5),
         inset 0 0 10px #ff66c4;
     }
   }
 
   .animate-pulse-glow {
-    animation: pulse-glow 4s ease-in-out infinite;
+    animation: glow-frame 4s ease-in-out infinite;
   }
 
   .outer-trapezoid {
@@ -99,10 +99,11 @@
 
   /* For skill logos */
   .skill-logo {
-    display: inline-flex;
+    display: flex;
+    width: 9.25rem;
+    text-align: center;
     align-items: center;
     justify-content: center;
-    gap: 1;
     margin-top: 8px;
     padding: 0.5rem 0.6rem;
     border-radius: 2px;
