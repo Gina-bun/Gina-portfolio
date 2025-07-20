@@ -2,14 +2,14 @@
 
 @font-face {
   font-family: "GalaxyGirl";
-  src: url("fonts/GalaxyGirl-2OO0K.ttf") format("truetype");
+  src: url("assets/fonts/GalaxyGirl-2OO0K.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Insomnia";
-  src: url("/fonts/AndroidInsomniaRegular-RLxW.ttf") format("truetype");
+  src: url("assets/fonts/AndroidInsomniaRegular-RLxW.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
