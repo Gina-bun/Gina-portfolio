@@ -107,10 +107,41 @@
     margin-top: 8px;
     padding: 0.5rem 0.6rem;
     border-radius: 2px;
-    background: rgba(30, 30, 47, 0.3);
+    border: 1px solid rgba(255, 102, 196, 0.15);
+    /* background: rgba(30, 30, 47, 0.3);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 102, 196, 0.15);
-    font-size: 1.2rem;
+    font-size: 1.2rem; */
   }
+}
+
+@layer components{
+  .btn-pop{
+    @apply transition transform duration-200 ease-in-out;
+
+    /* galaxy glass effect background */
+    background: linear-gradient(135deg, #ff69b40b, #892be221, #ff149122, #ff69b43e);
+    background-size: 400% 400%;
+    animation: galaxy-move 8s ease infinite;
+
+    /* frosted glass effect*/
+    backdrop-filter: blur(8px);
+     -webkit-backdrop-filter: blur(8px);
+
+     /* box-shadow: 0 0 3px 2px rgba(255, 105, 180, 0.3); */
+  }
+
+  .btn-pop:hover{
+    @apply scale-102;
+     box-shadow: 0 0 3px 2px rgba(255, 105, 180, 0.3);
+    /* box-shadow: 0 0 3px 2px rgba(103, 42, 71, 0.6); */
+
+    @keyframes galaxy-effect {
+      0% { background-position: 0% 50%;}
+      50% { background-position: 100% 50%;}
+      100% { background-position: 0% 50%;}
+
+    }
+  }
+  
 }

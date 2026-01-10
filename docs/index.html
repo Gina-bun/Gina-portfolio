@@ -11,7 +11,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
     <link href="./style.css" rel="stylesheet" />
     <link
@@ -178,7 +178,7 @@
       <!-- Skill list -->
       <div
         id="skill-list"
-        class="min-h-18dvh px-5 py-4 mx-4 my-6 flex justify-center flex-wrap"
+        class=" min-h-18dvh gap-1.5 px-5 py-4 mx-4 my-6 flex justify-center flex-wrap"
       >
         <h3
           class="max-sm:title min-sm:text-center min-sm:text-[2rem] text-amber-200"
@@ -187,55 +187,52 @@
         </h3>
         <div
           id="skills"
-          class="w-full flex flex-wrap gap-x-2 gap-y-1 justify-center"
+          class=" w-full flex flex-wrap gap-x-2 gap-y-1 justify-center"
         >
-          <div class="skill-logo">
+          <div class="skill-logo btn-pop">
             <i class="devicon-html5-plain colored text-2xl pr-1.5 mb-0.5"></i>
             <span class=""> HTML</span>
           </div>
 
-          <div class="skill-logo">
+          <div class="skill-logo btn-pop">
             <i class="devicon-css3-plain colored text-2xl pr-1.5"></i>
             <span class=""> CSS</span>
           </div>
 
-          <div class="skill-logo">
+          <div class="skill-logo btn-pop">
             <i
-              class="devicon-bootstrap-plain colored text-[1.6rem] pr-1.5"
-              title="Bootstrap"
-            ></i>
-            <span class=""> Bootstrap</span>
-          </div>
-
-          <div class="skill-logo">
-            <i
-              class="devicon-sass-original colored text-2xl pr-1.5"
-              title="SASS"
-            ></i>
-            <span class=""> Sass</span>
-          </div>
-
-          <div class="skill-logo">
-            <i
-              class="devicon-tailwindcss-plain colored text-2xl pr-1.5"
+              class="devicon-tailwindcss-plain colored text-[1.6rem] pr-1.5"
               title="Tailwind CSS"
             ></i>
-            <span class=""> TailwindCSS</span>
+            <span class="">Tailwind</span>
           </div>
 
-          <div class="skill-logo">
+          <div class="skill-logo btn-pop">
             <i
               class="devicon-javascript-plain colored text-2xl pr-1.5 h-[1.5rem]"
             ></i>
             <span class=""> JavaScript</span>
           </div>
 
-          <div class="skill-logo">
+          <div class="skill-logo btn-pop">
             <i class="devicon-react-original colored text-2xl pr-1.5"></i>
             <span class="">React</span>
           </div>
 
-          <div class="skill-logo">
+          <div class="skill-logo btn-pop">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
+              class="inline-block pr-1.5 h-[1.8rem] w-[1.8rem]"
+            />
+            <span class="">Vite</span>
+          </div>
+
+          <div class="skill-logo btn-pop">
+            <i class="devicon-github-original text-2xl pr-1.5"></i>
+            <span class="">GitHub</span>
+          </div>
+
+          <div class="skill-logo btn-pop">
             <i
               class="devicon-git-plain colored text-2xl pr-1.5 mb-0.2"
               title="Git"
@@ -246,7 +243,7 @@
       </div>
 
       <!-- Projects -->
-      <div id="projects" class="h-340 mx-8 min-sm:h-210">
+      <div id="projects" class="h-fit mx-8 min-sm:h-fit">
         <h3
           class="max-sm:title min-sm:text-center min-sm:text-[2rem] text-amber-200"
         >
@@ -267,13 +264,19 @@
               />
             </div>
             <div id="project-1">
-              <h4 class="text-lg font-bold">Project 1</h4>
+              <h4 class="text-lg font-bold">Macros-GH</h4>
               <p class="text-sm">A brief description of project 1.</p>
               <div class="flex flex-col gap-x-2 mt-2">
-                <a href="#" class="text-[#6e00ff] hover:underline"
+                <a
+                  href="https://macrosgh.netlify.app/"
+                  target="_blank"
+                  class="text-[#6e00ff] hover:underline"
                   >View Project Demo</a
                 >
-                <a href="#" class="text-[#6e00ff] hover:underline"
+                <a
+                  href="https://github.com/Gina-bun/Macros-GH"
+                  target="_blank"
+                  class="text-[#6e00ff] hover:underline"
                   >Source Code</a
                 >
               </div>
@@ -291,13 +294,19 @@
               />
             </div>
             <div id="project-2">
-              <h4 class="text-lg font-bold">Project 2</h4>
+              <h4 class="text-lg font-bold">Job Tracker</h4>
               <p class="text-sm">A brief description of project 2.</p>
               <div class="flex flex-col gap-x-2 mt-2">
-                <a href="#" class="text-[#6e00ff] hover:underline"
+                <a
+                  href="https://job-application-tracker-js.netlify.app/"
+                  target="_blank"
+                  class="text-[#6e00ff] hover:underline"
                   >View Project Demo</a
                 >
-                <a href="#" class="text-[#6e00ff] hover:underline"
+                <a
+                  href="https://github.com/Gina-bun/Job-Application-Tracker-js"
+                  target="_blank"
+                  class="text-[#6e00ff] hover:underline"
                   >Source Code</a
                 >
               </div>
@@ -317,54 +326,6 @@
             <div id="project-3">
               <h4 class="text-lg font-bold">Project 3</h4>
               <p class="text-sm">A brief description of project 3.</p>
-              <div class="flex flex-col gap-x-2 mt-2">
-                <a href="#" class="text-[#6e00ff] hover:underline"
-                  >View Project Demo</a
-                >
-                <a href="#" class="text-[#6e00ff] hover:underline"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 4 -->
-          <div
-            class="grid grid-cols-2 px-5 py-4 gap-3 inner-trapezoid h-60 w-full min-sm:w-[calc(50%-0.75rem)]"
-          >
-            <div id="image-frame" class="flex col-span-1 items-center">
-              <img
-                src="../public/images/w3.jpeg"
-                class="h-50 w-full object-fit"
-              />
-            </div>
-            <div id="project-4">
-              <h4 class="text-lg font-bold">Project 4</h4>
-              <p class="text-sm">A brief description of project 4.</p>
-              <div class="flex flex-col gap-x-2 mt-2">
-                <a href="#" class="text-[#6e00ff] hover:underline"
-                  >View Project Demo</a
-                >
-                <a href="#" class="text-[#6e00ff] hover:underline"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 5 -->
-          <div
-            class="grid grid-cols-2 px-5 py-4 gap-3 inner-trapezoid h-60 w-full min-sm:w-[calc(50%-0.75rem)]"
-          >
-            <div id="image-frame" class="flex col-span-1 items-center">
-              <img
-                src="../public/images/w3.jpeg"
-                class="h-50 w-full object-fit"
-              />
-            </div>
-            <div id="project-5">
-              <h4 class="text-lg font-bold">Project 5</h4>
-              <p class="text-sm">A brief description of project 5.</p>
               <div class="flex flex-col gap-x-2 mt-2">
                 <a href="#" class="text-[#6e00ff] hover:underline"
                   >View Project Demo</a
