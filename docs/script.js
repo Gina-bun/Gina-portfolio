@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const messages = [
   "🛰️ ACCESSING USER PROFILE...",
   "> Name: Georgina Akumiah",
-  "> Role: Front-End Developer 💻",
+  "> Identity: Front-End Developer 💻",
   "> Currently: Breaking things in React, fixing them in TypeScript",
   "> Fun fact: My VSCode theme is on the marketplace (FemmeAura)💜",
 ];
