@@ -22,7 +22,8 @@ const messages = [
   "🛰️ ACCESSING USER PROFILE...",
   "> Name: Georgina Akumiah",
   "> Role: Front-End Developer 💻",
-  "> Likes:Purple and plums 💜🍇",
+  "> Currently: Breaking things in React, fixing them in TypeScript",
+  "> Fun fact: My VSCode theme is on the marketplace (FemmeAura)💜",
 ];
 
 const textEl = document.getElementById("typewriter-text");
